@@ -35,6 +35,7 @@ class TransactionDAOImpl implements TransactionDAO {
             System.out.println("Oops! something went wrong");
     }
 
+    // **********************************************************************************************THIS ONE NOT WRKING FOR ME
     public void getUserTransactions (int id) throws SQLException {
         String sql = "SELECT * FROM Transaction where userId = ?";
 
