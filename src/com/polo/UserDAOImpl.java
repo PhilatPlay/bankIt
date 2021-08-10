@@ -40,6 +40,7 @@ public class UserDAOImpl implements UserDAO {
             System.out.println("Oops! something went wrong");
     }
 
+    //  **********************************************************************************************THIS ONE NOT WRKING FOR ME
     @Override
     public void updateUserABalance(User user) throws SQLException {
         String sql = "update user set accountBalance = ? where id = ?";
@@ -54,6 +55,8 @@ public class UserDAOImpl implements UserDAO {
         else
             System.out.println("Oops! something went wrong");
     }
+    
+    // **********************************************************************************************THIS just using as reference
 
     @Override
     public void updateUser(User user) throws SQLException {
